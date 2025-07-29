@@ -1,25 +1,121 @@
+// {
+//   "editor.bracketPairColorization.enabled": true,
+//   "editor.cursorBlinking": "solid",
+//   "editor.fontFamily": "ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace",
+//   "editor.fontLigatures": false,
+//   "editor.fontSize": 22,
+//   "editor.formatOnPaste": true,
+//   "editor.formatOnSave": true,
+//   "editor.lineNumbers": "on",
+//   "editor.matchBrackets": "always",
+//   "editor.minimap.enabled": false,
+//   "editor.smoothScrolling": true,
+//   "editor.tabSize": 2,
+//   "editor.useTabStops": true,
+//   "emmet.triggerExpansionOnTab": true,
+//   "explorer.openEditors.visible": 0,
+//   "files.autoSave": "afterDelay",
+//   "screencastMode.onlyKeyboardShortcuts": true,
+//   "terminal.integrated.fontSize": 18,
+//   "window.zoomLevel": 3,
+//   "workbench.colorTheme": "Visual Studio Dark",
+//   "workbench.fontAliasing": "antialiased",
+//   "workbench.statusBar.visible": true
+// }
 {
-  "editor.bracketPairColorization.enabled": true,
-  "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace",
-  "editor.fontLigatures": false,
-  "editor.fontSize": 22,
-  "editor.formatOnPaste": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "OM Theme (Night Owl Italic)",
+  "workbench.startupEditor": "none",
+  "editor.fontSize": 17,
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontWeight": "normal",
+  "explorer.compactFolders": false,
+
+  "code-runner.executorMap": {
+    "python": "clear ; python -u"
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.ignoreSelection": true,
+  "editor.renderWhitespace": "all",
   "editor.formatOnSave": true,
-  "editor.lineNumbers": "on",
-  "editor.matchBrackets": "always",
+  "workbench.tree.indent": 20,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "explorer.confirmDelete": false,
+  "git.enableSmartCommit": true,
   "editor.minimap.enabled": false,
-  "editor.smoothScrolling": true,
-  "editor.tabSize": 2,
-  "editor.useTabStops": true,
-  "emmet.triggerExpansionOnTab": true,
-  "explorer.openEditors.visible": 0,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.env.windows": {},
+  // "console-ninja.featureSet": "Community",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmPasteNative": false,
+  "explorer.confirmDragAndDrop": false,
+  // "redhat.telemetry.enabled": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "files.autoSave": "afterDelay",
-  "screencastMode.onlyKeyboardShortcuts": true,
-  "terminal.integrated.fontSize": 18,
-  "window.zoomLevel": 3,
-  "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Visual Studio Dark",
-  "workbench.fontAliasing": "antialiased",
-  "workbench.statusBar.visible": true
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "workbench.editor.empty.hint": "hidden",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "always",
+  "code-runner.defaultLanguage": "Python",
+  "editor.accessibilitySupport": "off",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.largeFileOptimizations": false,
+  "python.createEnvironment.trigger": "off",
+  "jupyter.askForKernelRestart": false
 }
