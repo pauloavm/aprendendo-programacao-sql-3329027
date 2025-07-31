@@ -2,9 +2,12 @@
 SELECT
 tra.TrackId as id,
 tra.Name as musica,
-alb.Title as album,
+alb.Title as titulo_album,
 art.Name as artista
 FROM
 tracks AS tra
 INNER JOIN albums AS alb ON tra.AlbumId = alb.AlbumId
-INNER JOIN artists AS art ON art.ArtistId = alb.ArtistId;
+INNER JOIN artists AS art ON art.ArtistId = alb.ArtistId
+WHERE
+artista LIKE '%Nação%'
+AND titulo_album NOT LIKE 'Da lama ao Caos ';
